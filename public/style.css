@@ -1,3 +1,8 @@
+*box-sizing{
+    margin: 0;
+    padding: 0;
+}
+
 body{
 
     background-color: #b7bae6;
@@ -13,6 +18,7 @@ h1{
 p{
     color: #341a93;
     text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 a{
@@ -20,3 +26,10 @@ a{
    padding: 10px;
     text-decoration: none;
 }
+
+nav{
+    background-color: #b7bae6;
+    padding: 10px;
+    text-align: center;
+}
+

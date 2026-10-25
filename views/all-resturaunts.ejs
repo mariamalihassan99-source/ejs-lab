@@ -14,9 +14,6 @@
 
 
 
-
-
-
 <!-- scriptlet tag  : javascript logic in the ejs file (for loops, if statements)-->
 <% for(let oneResturaunt of resturaunts) { %>
     <a href="/restaurants/<%= oneResturaunt.id %>"> <%= oneResturaunt.name %> <%= oneResturaunt.isOpen %> </a>
