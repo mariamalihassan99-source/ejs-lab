@@ -1,0 +1,22 @@
+body{
+
+    background-color: #b7bae6;
+
+}
+
+h1{
+    color: #1b0274;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    color: #341a93;
+    text-align: center;
+}
+
+a{
+    color: #341a93;
+   padding: 10px;
+    text-decoration: none;
+}

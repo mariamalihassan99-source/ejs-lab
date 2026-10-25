@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+   <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+ <%- include('../partials/navbar') %>
+
+<h1>Restaurant Details</h1>
+<p>Restaurant Name: <%= resturaunt.name %></p>
+<p>Address: <%= resturaunt.address %></p>
+<p>Phone: <%= resturaunt.phone %></p>
+
+
+
+
+
+<!-- scriptlet tag  : javascript logic in the ejs file (for loops, if statements)-->
+ 
+     
+       <% if (resturaunt.isOpen) { %>
+        <p>Open</p>
+       <% } else { %>
+        <p>Closed</p>
+       <% } %>
+    
+<h1>Menu</h1>
+
+      <% for (let oneMenuItem of resturaunt.menu) { %>
+        <p>  <%= oneMenuItem.name %> </p>
+<p> price : <%= oneMenuItem.price %> </p>
+<p> rating : <%= oneMenuItem.rating %> </p>
+
+
+       <% } %>
+    </body>
+</html>
